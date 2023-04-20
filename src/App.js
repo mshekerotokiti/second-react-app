@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import image from './sharon.jpg';
+import Blog from './components/Blog';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App (){
+const [blog, setBlog] = useState("");
+function blog(info){
+  setBlog(info);
 }
 
+    return (
+      <div>
+        <img className='center'
+        src= {image}
+        alt="tokiti" />
+        < Header name="My Information" info={blog}/>
+        <h2> What you don't know about me</h2>
+        < Blog />
+
+
+        <>
+          <button onClick={incrementCount}
+          style = {{color: "blue"}}
+          >Click me!</button>
+
+        </>
+
+      </div>
+      
+      
+    );
+  }
+
 export default App;
+
