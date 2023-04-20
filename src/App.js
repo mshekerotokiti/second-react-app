@@ -43,7 +43,7 @@ function getInfo(info){
 
     function handleClick(event) {
       event.preventDefault();   
-      alert("Roses are Red");
+      alert("Roses are Red.Red roses symbolize love and romance and are the perfect Valentine's Day rose");
   
     }
   
@@ -59,7 +59,7 @@ function getInfo(info){
 
     function handleClick(event) {
       event.preventDefault();   
-      alert("purple flowers ");
+      alert("With its origins tied to royalty and ceremony, purple flowers represent dignity, pride and success ");
   
     }
   
